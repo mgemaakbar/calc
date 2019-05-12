@@ -1,0 +1,9 @@
+Only one table is created, a table named item.
+
+CREATE TABLE IF NOT EXISTS item (
+		id serial primary key, <-- primary key
+		name text, <-- item name 
+		tax_code integer, <-- tax code (valid value: 1, 2, 3)
+		price integer <-- the item price, duh
+);
+

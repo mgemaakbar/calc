@@ -1,0 +1,16 @@
+'As user I want to create my tax object': 
+
+Endpoint: POST /create-item
+Request body example: `{"name": "wow", "price": 100, "tax_code":1}`
+Repsonse code: 200 = succeeded, 500  = internal error, 400 = bad request
+Response body on error example: {"message": "error"}
+
+'As user I want to see my bill'
+Endpoint: GET /bill
+Repsonse code: 200 = succeeded, 500 = internal error
+Response body on successful request: {"bills":[{"name":"Lucky Stretch","tax_code":2,"type":"Tobacco","refundable":false,"price":1000,"tax":30,"amount":1030},{"name":"Big Mac","tax_code":1,"type":"Food and Beverage","refundable":true,"price":1000,"tax":100,"amount":1100},{"name":"Movie","tax_code":3,"type":"Entertainment","refundable":false,"price":150,"tax":0.5,"amount":150.5},{"name":"nama","tax_code":1,"type":"Food and Beverage","refundable":true,"price":100,"tax":10,"amount":110},{"name":"wow","tax_code":1,"type":"Food and Beverage","refundable":true,"price":100,"tax":10,"amount":110}]}
+The json keys name of the response body should explain itself.
+
+
+
+
